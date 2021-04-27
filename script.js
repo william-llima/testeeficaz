@@ -135,11 +135,14 @@ formenv.addEventListener('submit',function(event){
             'uf':inputs[10].value,
             
         }
+         dataj=JSON.stringify(data)
     if(alterar==false && deletar==false){
-        data=JSON.stringify(data)
+        dataj=JSON.stringify(data)
         sendApi(data,"POST","https://estagio.eficazmarketing.com/api/user")
     }else if(deletar==false && alterar==true){
-        sendApi(data,"PUT","https://estagio.eficazmarketing.com/api/user/"+usrid)
+        console.log(data)
+
+        sendApi(dataj,"PUT","https://estagio.eficazmarketing.com/api/user/"+usrid)
     }
 })
 
