@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id='container'>
+        <div id='left'>
+           <button id='cadastrabtnl'>
+               <div class='intern_button'>
+                    <img src='img/avatar.svg'>
+                    <p>Cadastro</p>
+      
+                 </div>
+            </button>
+           <button id='listabtnl'>
+               <div class='intern_button'>
+                    <img src='img/users.svg'>
+                    <p>Lista de cadastrados</p>
+               </div>
+           </button>
+        </div>
+        <div id='right'>
+            <form method="POST" id="form_enviar">
+                <div id="titulo_form">
+                    <h1>Cadastro</h1>
+                </div>
+                <div id="cont_form">
+                    <div id="left_form">
+                            <div class="box_input">
+                                <label for="Email_p">E-mail pessoal do candidato</label><br/>
+                                <input type="email" name="Email_p" id="Email_p" required/>
+                            </div>
+                            <div class="box_input">
+                                <label for="email">E-mail</label><br/>
+                                <input type="email" name="email" id="email" required/>
+                            </div>
+                            <div class="box_input">
+                                <label for="rua">Rua</label><br/>
+                                <input type="text" name="rua" id="rua" required/>
+                            </div>
+                            <div class="box_input">
+                                <label for="complemento">Complemento</label><br/>
+                                <input type="text" name="complemento" id="complemento" required/>
+                            </div>
+                            <div class="box_input">
+                                <label for="cep">Cep</label><br/>
+                                <input type="text" name="cep" id="cep" required/>
+                            </div>
+                    </div>
+                    <div id="right_form">
+                                <div class="box_input">
+                                <label for="Nome">Nome completo</label><br/>
+                                <input type="text" name="Nome" id="nome" required/>
+                            </div>
+                            <div class="box_input">
+                                <label for="telefone">Telefone(DDD)</label><br/>
+                                <input type="number" placeholder="digite apenas numeros ex 011" name="telefone" id="telefone" required/>
+                            </div>
+                            <div class="box_input">
+                                <label for="n">N,º</label><br/>
+                                <input type="text" name="n" id="n" required/>
+                            </div>
+                            <div class="box_input">
+                                <label for="bairro">Bairro</label><br/>
+                                <input type="text" name="bairro" id="bairro" required/>
+                            </div>
+                            <div class="box_input" id="cidade_cont">
+                                <div>
+                                <label for="cidade">Cidade</label><br/>
+                                <input type="text" name="cidade" id="cidade" required/>
+                                </div>
+                                <div>
+                                    <label for="uf">Uf</label><br/>
+                                    <input type="text" name="uf" id="uf" required/>
+                                </div>
+                            </div>
+                           
+                        </div>
+                   
+                </div>
+                <div id="div_btn_form_cadastro">
+                    <button id="btn_cadastro" >Cadastrar</button>
+                </div>
+            </form>
+        </div>
+        <div id='container_list'>
+            <div id="opexcluir">
+                <p>Tem certeza que deseja Excluir?</p>
+                <div id="filhoopexcluir">
+                    <button class="bt1opexc">Sim</button><button class="bt2opexc">Cancelar</button>
+                </div>
+           </div>
+            <div id='listsec1'>
+                <div class='listsecbox'>
+                    <h3>Lista de cadastrados</h3>
+                </div>
+            </div>
+            <div id='listsec2'>
+                <div class='listsecbox'>
+                    <h3>FILTROS</h3>
+                </div>
+            </div>
+            <div id='listsec3'>
+                <div class="listsecbox2">
+                    <div class='box_list_colum'><p>Nome</p></div>
+                    <div class='box_list_colum'><p>E-mail</p></div>
+                    <div class='box_list_colum'><p>Endereço</p></div>
+                    <div class='box_list_colum'><p>Telefone</p></div>
+                    <div class='boxm_list_colum'><p>Ação</p></div>
+                </div>
+            </div>
+            <div id='listsec4'>
+                <center>
+                <div class='cont_listsec4'>
+                    <div class='card_contact'>
+                        <div class='nomecard card'><p>Carregando...</p></div>
+                        <div class='e_mailcard card'><p>Carregando...</p></div>
+                        <div class='enderecocard card'><p>Carregando...</p></div>
+                        <div class='telefonecard card' ><p>Carregando...</p></div>
+                        <div class='acao cardb'>
+                            <input type="button" name='seila' class='btnlist itb1' value="Alterar"/>
+                            <input type="button" name='seila' class='btnlist itb2' value="Excluir"/>
+                        </div>
+                    </div>
+                </div>
+            </center>
+            </div>
+                
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
